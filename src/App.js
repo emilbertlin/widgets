@@ -4,6 +4,7 @@ import Accordion from './components/Accordion'
 // eslint-disable-next-line no-unused-vars
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from './components/Translate'
 
 // eslint-disable-next-line no-unused-vars
 const items = [
@@ -21,31 +22,26 @@ const items = [
   }
 ];
 
-const options = [
+const options = 
+[
   {
     label: 'The Color Red',
-    value: 'red'
+    value: 'red',
   },
   {
     label: 'The Color Green',
-    value: 'green'
+    value: 'green',
   },
   {
     label: 'A Shade of Blue',
-    value: 'blue'
+    value: 'blue',
   }
 ]
 
 const App = () => {
-  const [selected, setSelected] = useState(options[0])
-  
   return (
     <div>
-      <Dropdown 
-      selected={selected} 
-      onSelectedChange={setSelected}
-      options={options} 
-      />
+      <Translate />
     </div>
   )
 }
