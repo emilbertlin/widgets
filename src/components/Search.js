@@ -35,9 +35,6 @@ const Search = () => {
     if (debouncedTerm) {
       searchWiki();
     }
-    return () => {
-      
-    }
   }, [debouncedTerm])
 
   const renderedResults = results.map((result) => {
