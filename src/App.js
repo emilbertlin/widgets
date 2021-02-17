@@ -1,4 +1,3 @@
-import { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import Accordion from './components/Accordion'
 // eslint-disable-next-line no-unused-vars
